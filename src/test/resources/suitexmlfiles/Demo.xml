@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MapSynq Test Suite" parallel="tests" thread-count="1">
+
+  	<parameter name="browserName" value="chrome" />
+	<parameter name="url" value="http://www.mapsynq.com/" />
+
+ <test name="MapSynq - Account SignUp Test" >
+    <classes>
+      <class name="com.mapsynq.automation.register.test.DemoTest"/>
+    </classes>
+ </test>
+
+</suite>

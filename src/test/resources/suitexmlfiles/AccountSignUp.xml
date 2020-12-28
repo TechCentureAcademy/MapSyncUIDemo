@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MapSynq Test Suite" parallel="tests" thread-count="1">
+
+  	<parameter name="browserName" value="chrome" />
+	<parameter name="url" value="http://www.mapsynq.com/" />
+  	<parameter name="firstName" value="naga" />
+  	<parameter name="lastName" value="k" />
+  	<parameter name="dob" value="11-11-1999" />
+  	<parameter name="email" value="test@gmail.com" />
+  	<parameter name="password" value="testssss" />
+
+ <test name="MapSynq - Account SignUp" >
+    <classes>
+      <class name="com.mapsynq.automation.register.test.SignUpTest"/>
+    </classes>
+ </test>
+
+</suite>
+
+ <!--  
+      Before running XML File, 1. Check your Chrome Browser Version
+      						   2. Download ChromDriver File from Official Site of Chrome [https://chromedriver.chromium.org/downloads] 
+      						   3. Once you downloaded, copy the chromedriver to below location : 'src/main/resources/driver/{Your OS Folder}/' 
+      If you are,
+                 Windows OS, 'src\main\resources\driver\windows\chromedriver.exe'
+                 Mac OS,     'src\main\resources\driver\mac\chromedriver'
+ 
+  -->
